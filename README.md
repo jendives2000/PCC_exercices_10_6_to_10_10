@@ -5,33 +5,33 @@
 
 ## The try/except Block
 
-The try/except block was hard to grasp from the couple of videos I watched about it. None of them really mentioned the important role of external 'sources', which mostly are: 
+The **try/except block** was hard to grasp from the couple of videos I watched about it. None of them really mentioned the important role of **external 'sources'**, which mostly are: 
 - user inputs, 
 - project files 
 - and network connections
 
-And also try/except plays an important part in securing the code. As a developer, this is something to always keep in mind and watch out. 
+And also try/except plays an important part in **securing the code**. As a developer, this is something to always keep in mind and watch out. 
 
 Other than these points, the syntax is easy to use, nothing complicated here.  
 
 And the error to pass after the `except` can easily be copy/pasted from the traceback error message.  
 
-The other functionality of try/except is that it can still be optional even if used, with the `pass` method in the body of the except. 
+The other functionality of try/except is that it **can still be optional** even if used, with the `pass` method in the body of the except. 
 
 ![exercise 10-7](image-1.png)
 
-Here the `pass` keeps the error handling silent. The user won't know about it, and he'd just keep on inputting numbers, even if only letters are typed in. 
+Here the `pass` keeps the **error handling silent**. The user won't know about it, and he'd just keep on inputting numbers, even if only letters are typed in. 
 
 ---
 
 ## Read & Write
 
-The `pathlib` library has methods like `read_text()` and `write_text()` that are self-explanatory. They are used with other methods to manipulate contents of documents. I played with the `.split()`, `splitlines()`, and `.count()` methods.  
+The `pathlib` library has methods like `read_text()` and `write_text()` that are self-explanatory. They are used with other methods to **manipulate contents of documents**. I played with the `.split()`, `splitlines()`, and `.count()` methods.  
 The things that can be done with books and documents... 
 
 ### Beware of rewriting your file
 
-The `write_text()` method, if the file it is writing on already exist, is constantly rewriting the file. So be sure of your file names, otherwise you may be rewriting one of them without knowing it. 
+The `write_text()` method, if the file it is writing on already exists, is constantly rewriting the file. So **be sure of your file names**, otherwise you **may be rewriting one of them** without knowing it. 
 
 ### The Importance of the Project's Folders Structure
 
@@ -49,7 +49,7 @@ Given the age of the book (about 2200 years old), I was pretty sure it was avail
 
 Anyway, I knew the story of the book: his friend trying to help him escape. So I wanted to see how many times the word 'escape' appears in the book. To my disappointment, only 14 times. 
 
-Of course many other words: 
+Of course I tried many other words: 
 
 ![fun with word counts in books](image-2.png)
 
