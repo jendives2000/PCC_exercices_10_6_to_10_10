@@ -37,8 +37,10 @@ The `write_text()` method, if the file it is writing on already exists, is const
 
 ### The Importance of the Project's Folders Structure
 
-But when working with these pathlib tools, the file path is essential. The **relative path** is for documents that are "close" to the project main files, meaning right in the same folder or one up.  
+But when working with these pathlib tools, the file path is essential. The **relative path** is for documents that are "close" to the project main files, meaning right in the same folder or one folder down.  
 And if this is not a working option, then the **absolute path** will always works. 
+
+![project folder structure](image-4.png)
 
 --- 
 
@@ -61,24 +63,24 @@ Of course I tried many other words:
 
 After I compared my code to the solutions: 
 - **exercise 10-6**:  
-  The solutions did not use the int() method on the variable that holds the input value. It used it on a new line, to add readability I guess. On a simple program like this one I suppose this is a better route. But the opposite could be true too.
+  The solutions did not use the int() method on the variable that holds the input value. It **used it on a new line**, to add readability I guess. On a simple program like this one I suppose this is a better route. But the opposite could be true too.
 
-  Using the new line uses 8 characters to be added and a new line as well. The int() method is using a net 5 characters. So the difference is 3 characters added. 
+  Using the new line uses 8 characters to be added and a new line as well. The int() method is using a net of 5 characters. So the **difference is 3 characters added**. 
   But in my example, my inputs are not called 'x' and 'y' but 'num1' and 'num2'.  
-  This makes me go back and modify my code...  
-  So the decision is not that cut out for me... So I'll just stick to my initial code. 
+  This **makes me go back and modify** my code...  
+  So the **decision is not that cut out for me**... So I'll just stick to my initial code. 
 
   GRADE:   
   IMHO it's a pass. 
 
 - **exercise 10-7**:  
-  I anticipated, without knowing it, this exercise in the previous one. I use a while loop on it already.  
-  But no 'quit' option here, just an endless program.  
+  I anticipated, without knowing it, this exercise in the previous one. I used a while loop on it already.  
+  But **no 'quit' option here**, just an endless program.  
 
-  Also, I used the `pass`  method i nthe body of the `except:` to make it silent. The solution code did not use but I thought this was what was requested in the instructions.  
+  Also, I used the `pass`  method in the body of the `except:` to make it silent. The **solution code did not use** it but **I thought this was what was requested** in the instructions.  
   This made me think and, as is, **my code is not user friendly**. If a letter is typed, nothing tells you it is not right. So this is **a mistake on me**. 
 
-  **Ease of use is important** because it drives the usability of a program. The easier to use, the more the program is appreciated and used. This is something I need to always be watching. 
+  **Ease of use is important** because it drives the usability of a program. The easier to use, the more the program is appreciated and used. This is something **I need to always be watching**. 
 
   GRADE:  Fail. 
 
@@ -92,8 +94,8 @@ After I compared my code to the solutions:
 
 - **exercise 10-10**:
   
-  So my first approach was to get the list of words from the `.count()` method and use a for loop with inside it an `if word == "something":` but that did not work because each item in the list is a string that also contains special characters like a comma, exclamation mark or ":" and dot.  
-  The count numbers returned were not nearly close enough (I checked with a simple search directly in the text file of the book). 
+  So my first approach was to get the list of words from the `.count()` method and use a for loop with inside it an `if word == "something":` but **that did not work** because each item in the list is a string that also **contains special characters** like a comma, exclamation mark or ":" and dot.  
+  The **count numbers returned were not nearly close enough** (I checked with a simple search directly in the text file of the book). 
 
   After about an hour, I thought about the `.join()` method and it worked perfectly. The numbers are correct. 
 
@@ -101,9 +103,11 @@ After I compared my code to the solutions:
 
   Also, while the solution code did not use it, I used the `write_text()` method to write the names in each cats and dogs file. 
 
-  Additionaly, I defined the function with an `*args` which makes it more functional. I **used it in one call to get the count number of many words**.  
+  Additionaly, I defined the function with an `*args` which makes it more functional (line 28 of exercise_10_10.py). I **used it in one call to get the count number of many words**.  
 
   GRADE: hig pass.
+
+  ![*args in function parameters*](image-5.png)
 
 ---
 
