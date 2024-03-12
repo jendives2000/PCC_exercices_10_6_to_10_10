@@ -22,6 +22,8 @@ The other functionality of try/except is that it **can still be optional** even 
 
 Here the `pass` keeps the **error handling silent**. The user won't know about it, and he'd just keep on inputting numbers, even if only letters are typed in. 
 
+**Turns out this is bad practice**, because it downgrades the usability of the program, making less clear to the user what was done right or wrong. 
+
 ---
 
 ## Read & Write
@@ -98,6 +100,8 @@ After I compared my code to the solutions:
   ![join method](image-3.png)
 
   Also, while the solution code did not use it, I used the `write_text()` method to write the names in each cats and dogs file. 
+
+  Additionaly, I defined the function with an `*args` which makes it more functional. I **used it in one call to get the count number of many words**.  
 
   GRADE: hig pass.
 
