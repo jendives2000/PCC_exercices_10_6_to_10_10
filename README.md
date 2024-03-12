@@ -58,19 +58,51 @@ Of course I tried many other words:
 ## How Well Did I do?
 
 After I compared my code to the solutions: 
-- **exercise **:  
-  Text 
+- **exercise 10-6**:  
+  The solutions did not use the int() method on the variable that holds the input value. It used it on a new line, to add readability I guess. On a simple program like this one I suppose this is a better route. But the opposite could be true too.
 
-  GRADE: Text. 
+  Using the new line uses 8 characters to be added and a new line as well. The int() method is using a net 5 characters. So the difference is 3 characters added. 
+  But in my example, my inputs are not called 'x' and 'y' but 'num1' and 'num2'.  
+  This makes me go back and modify my code...  
+  So the decision is not that cut out for me... So I'll just stick to my initial code. 
 
-- **exercise **:  
-  Text. 
+  GRADE:   
+  IMHO it's a pass. 
+
+- **exercise 10-7**:  
+  I anticipated, without knowing it, this exercise in the previous one. I use a while loop on it already.  
+  But no 'quit' option here, just an endless program.  
+
+  Also, I used the `pass`  method i nthe body of the `except:` to make it silent. The solution code did not use but I thought this was what was requested in the instructions.  
+  This made me think and, as is, **my code is not user friendly**. If a letter is typed, nothing tells you it is not right. So this is **a mistake on me**. 
+
+  **Ease of use is important** because it drives the usability of a program. The easier to use, the more the program is appreciated and used. This is something I need to always be watching. 
+
+  GRADE:  Fail. 
 
 - **exercise 10-8**:
   
+  The solution code is better: more concise than mine. **I made it way more complicated** than it needed to be. 
+
+  GRADE: pass but to be revisited. 
+
   ![alt text](image.png)
 
+- **exercise 10-10**:
+  
+  So my first approach was to get the list of words from the `.count()` method and use a for loop with inside it an `if word == "something":` but that did not work because each item in the list is a string that also contains special characters like a comma, exclamation mark or ":" and dot.  
+  The count numbers returned were not nearly close enough (I checked with a simple search directly in the text file of the book). 
+
+  After about an hour, I thought about the `.join()` method and it worked perfectly. The numbers are correct. 
+
+  ![join method](image-3.png)
+
+  Also, while the solution code did not use it, I used the `write_text()` method to write the names in each cats and dogs file. 
+
+  GRADE: hig pass.
+
+---
+
 #### Resources:
-Python Crash Course 3rd Ed.: [solutions to exercises 8-8 to 8-10](https://ehmatthes.github.io/pcc_3e/solutions/chapter_8/#8-9-messages)  
-Anaconda: [Forge package & icecream](https://anaconda.org/conda-forge/icecream)  
-Github: [Icecream issues page](https://github.com/gruns/icecream/issues/79)
+Python Crash Course 3rd Ed.: [solutions to exercises 10-6 to 10-10](https://ehmatthes.github.io/pcc_3e/solutions/chapter_10/#10-6-addition)  
+Gutenberg library: [Crito book](https://gutenberg.org/ebooks/1657) 
